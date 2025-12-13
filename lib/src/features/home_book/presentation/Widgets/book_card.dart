@@ -47,11 +47,11 @@ class BookCard extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: List.generate(5, (index) {
                 if (index < bookModel.rating.floor()) {
-                  return Icon(Icons.star, color: Colors.yellow, size: 20);
+                  return const Icon(Icons.star, color: Colors.yellow, size: 20);
                 } else if (index < bookModel.rating) {
-                  return Icon(Icons.star_half, color: Colors.yellow, size: 20);
+                  return const Icon(Icons.star_half, color: Colors.yellow, size: 20);
                 } else {
-                  return Icon(Icons.star, color: Colors.grey, size: 20);
+                  return const Icon(Icons.star, color: Colors.grey, size: 20);
                 }
               }),
             ),

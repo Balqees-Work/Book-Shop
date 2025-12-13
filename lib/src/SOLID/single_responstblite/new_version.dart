@@ -28,7 +28,7 @@ class BookDatabase {
 }
 
 void main() {
-  final myBook = Book('The Great Dart', 'A. Programmer', 300);
+  final myBook = const Book('The Great Dart', 'A. Programmer', 300);
   final repository = BookDatabase();
 
   repository.save(myBook);

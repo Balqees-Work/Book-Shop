@@ -11,7 +11,6 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 
 class MainHomeScreen extends StatelessWidget {
   const MainHomeScreen({super.key});
-
   @override
   Widget build(BuildContext context) {
     final localBooks = LocalBooks();
@@ -34,7 +33,7 @@ class MainHomeScreen extends StatelessWidget {
           ],
         ),
         bottomNavigationBar: Container(
-          color: Color(0xFF301CA0),
+          color: const Color(0xFF301CA0),
           child: const TabBar(
             labelColor: Colors.white,
             unselectedLabelColor: Colors.grey,

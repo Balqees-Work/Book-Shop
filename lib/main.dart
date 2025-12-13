@@ -12,6 +12,13 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
+    // include widget
+    // ValueListenableBuilder(
+    //   valueListenable: widgetAsync,
+    //   builder: (context, value, child) {
+    //   return
+    //   },
+    // );
     return ScreenUtilInit(
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
@@ -23,4 +30,11 @@ class MyApp extends StatelessWidget {
       ),
     );
   }
+}
+
+/// [widgetAsync] state alert handle value notifier  for CoreStateAlert provider
+final ValueNotifier<bool> widgetAsync = ValueNotifier(false);
+
+void updateAsync(bool value) {
+  widgetAsync.value = value;
 }

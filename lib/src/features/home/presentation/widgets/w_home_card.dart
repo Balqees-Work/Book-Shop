@@ -20,14 +20,14 @@ class WidgetHomeCard extends StatelessWidget {
           onPressed: () {
             onLogout('logout');
           },
-          icon: Icon(Icons.logout),
+          icon: const Icon(Icons.logout),
         ),
         IconButton(
           onPressed: () {
             onLogout('verifiedUser');
             verifiedUser();
           },
-          icon: Icon(Icons.verified_user),
+          icon: const Icon(Icons.verified_user),
         ),
       ],
     );

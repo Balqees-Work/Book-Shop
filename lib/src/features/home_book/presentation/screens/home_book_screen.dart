@@ -1,9 +1,6 @@
-import 'package:book_shop_bal/generated/assets.dart';
-import 'package:book_shop_bal/src/features/home_book/data/model/book_model.dart';
 import 'package:book_shop_bal/src/features/home_book/presentation/Widgets/see_all_books.dart';
 import 'package:book_shop_bal/src/features/home_book/presentation/Widgets/top_search_books.dart';
 import 'package:book_shop_bal/src/features/home_book/presentation/bloc/home_books_bloc.dart';
-import 'package:book_shop_bal/src/features/home_book/presentation/Widgets/book_card.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -33,7 +30,7 @@ class HomeBookScreen extends StatelessWidget {
                   ],
                 );
               } else {
-                return SizedBox();
+                return const SizedBox();
               }
             },
           ),

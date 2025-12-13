@@ -12,7 +12,7 @@ class HomeBooksRepositoryImplementation extends HomeBooksRepository {
   @override
   Future<List<BooksEntity>> getHomeBooks(bool isLocal) async {
     if (isLocal) {
-      final books = await localBooks.getLocalBooks();
+      final books = localBooks.getLocalBooks();
       return books.toEntity();
     } else {
       return [];
