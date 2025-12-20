@@ -16,6 +16,7 @@ dependencies:
   flutter_svg:
   cupertino_icons: ^1.0.8
   flutter_screenutil: ^5.9.3
+  get_it: ^9.2.0
   flutter_bloc:
 
 dev_dependencies:

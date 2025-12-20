@@ -5,6 +5,9 @@ class PageHome extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    // how used getit
+    Future<List<EntityBook>?> books = locator<CaseGetBooksTopSearch>()
+        .execute();
     return ListView(
       children: [
         WidgetHomeCard(

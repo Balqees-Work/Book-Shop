@@ -1,8 +1,10 @@
 import 'package:book_shop_bal/src/features/main_home/presentation/main_home_screen.dart';
+import 'package:book_shop_bal/src/injection/container.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 void main() {
+  setupLocator();
   runApp(const MyApp());
 }
 
