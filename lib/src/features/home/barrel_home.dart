@@ -3,6 +3,7 @@
 import 'package:book_shop_bal/src/injection/container.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:injectable/injectable.dart';
 
 part './data/model/m_book.dart';
 //-> repository

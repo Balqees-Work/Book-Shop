@@ -1,5 +1,6 @@
 part of '../../barrel_home.dart';
 
+@LazySingleton(as: RepositoryHome)
 class RepositoryHomeImpl implements RepositoryHome {
   final DataStaticTopSearchBook _dataStaticTopSearchBook;
   const RepositoryHomeImpl(this._dataStaticTopSearchBook);

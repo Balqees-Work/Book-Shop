@@ -1,0 +1,5 @@
+# delete all gen file and reGen again
+dart run build_runner build --delete-conflicting-outputs
+
+# watch the update delete previous Gen file
+dart run build_runner watch --delete-conflicting-outputs

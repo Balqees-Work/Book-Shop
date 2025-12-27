@@ -4,16 +4,14 @@ import 'package:get_it/get_it.dart';
 final GetIt locator = GetIt.instance;
 
 void setupLocator() {
-  locator.registerLazySingleton<DataStaticTopSearchBook>(
-    () => DataStaticTopSearchBook(),
-  );
+  locator.registerLazySingleton<DataStaticTopSearchBook>(() => .new());
 
   locator.registerLazySingleton<RepositoryHome>(
     () => RepositoryHomeImpl(locator<DataStaticTopSearchBook>()),
   );
 
-  locator.registerFactory<CaseGetBooksTopSearch>(g
-    () => CaseGetBooksTopSearch(repository: locator<RepositoryHome>()),
+  locator.registerFactory<CaseGetBooksTopSearch>(
+    () => .new(repository: locator<RepositoryHome>()),
   );
 
   authorize();

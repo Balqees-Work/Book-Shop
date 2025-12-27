@@ -7,7 +7,7 @@ publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 version: 1.0.0+1
 
 environment:
-  sdk: ^3.9.2
+  sdk: ^3.10.0
 
 
 dependencies:
@@ -17,22 +17,32 @@ dependencies:
   cupertino_icons: ^1.0.8
   flutter_screenutil: ^5.9.3
   get_it: ^9.2.0
+  # for dependency injection generation
+  injectable: ^2.7.1+4
   flutter_bloc:
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
+  # help for code formatting
   flutter_lints: ^6.0.0
-  flutter_gen_runner:
-  build_runner:
-  flutter_asset_generator:
+
+  # for generating assets
+  flutter_gen_runner: ^5.12.0
+
+  # for dependency injection generation
+  injectable_generator: ^2.12.0
+  
+  # for code generation
+  build_runner: ^2.10.4
+  
 
 
 flutter:
   uses-material-design: true
   assets:
     - assets/images/
-    - assets/icons/
+   
 
 
 

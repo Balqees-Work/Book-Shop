@@ -1,5 +1,6 @@
 part of '../../barrel_home.dart';
 
+@injectable
 class CaseGetBooksTopSearch {
   final RepositoryHome repository;
 

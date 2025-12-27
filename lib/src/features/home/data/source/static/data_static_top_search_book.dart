@@ -1,5 +1,6 @@
 part of '../../../barrel_home.dart';
 
+@lazySingleton
 class DataStaticTopSearchBook {
   List<ModelBook> books = [
     const ModelBook(
