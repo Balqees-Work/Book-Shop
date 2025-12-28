@@ -1,3 +1,5 @@
+import 'package:flutter/material.dart';
+
 class Car {
   Car._(); // constructor private
 
@@ -6,4 +8,5 @@ class Car {
 
 void main() {
   Car car = Car.instance;
+  debugPrint(car.toString());
 }
