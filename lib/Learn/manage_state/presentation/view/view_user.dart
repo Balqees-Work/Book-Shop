@@ -8,6 +8,10 @@ class ViewUser extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final bloc = BlocProvider.of<UserBloc>(context);
+    final bloc1 = context.read<UserBloc>();
+    final bloc3 = context.watch<UserBloc>();
+
     return Scaffold(
       appBar: AppBar(title: const Text('View User')),
       body: Center(
@@ -15,16 +19,18 @@ class ViewUser extends StatelessWidget {
           builder: (context, state) {
             return switch (state) {
               UserInitialize() => Text('Press button to start'),
-
               UserLoading() => CircularProgressIndicator(),
-
               UserLoaded(user: User u) => ListTile(
                 title: Text(u.name),
                 subtitle: Text(u.email),
+
+                // onTap: () {
+                //   onClick();
+                // },
               ),
               // TODO: Handle this case.
-              UserError(message: String m) => Text(
-                m,
+              UserError(user: User u) => Text(
+                'u',
                 style: TextStyle(color: Colors.red),
               ),
             };

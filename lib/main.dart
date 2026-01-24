@@ -1,6 +1,7 @@
 import 'package:book_shop_bal/Learn/manage_state/data/repository/r_user_impl.dart';
 import 'package:book_shop_bal/Learn/manage_state/domain/repository/r_user.dart';
 import 'package:book_shop_bal/Learn/manage_state/presentation/bloc/user_bloc.dart';
+import 'package:book_shop_bal/Learn/manage_state/presentation/view/view_user.dart';
 import 'package:book_shop_bal/src/features/main_home/presentation/main_home_screen.dart';
 
 import 'package:book_shop_bal/src/injection/container_auto.dart';
@@ -37,7 +38,7 @@ class MyApp extends StatelessWidget {
           theme: ThemeData(
             colorScheme: ColorScheme.fromSeed(seedColor: Colors.indigo),
           ),
-          home: const MainHomeScreen(),
+          home: const ViewUser(),
         ),
       ),
     );

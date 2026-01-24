@@ -16,14 +16,15 @@ class UserBloc extends Bloc<UserEvent, UserState> {
 
   Future<void> loadUser(LoadUserEvent event, Emitter<UserState> emit) async {
     // loading
-    emit(UserLoading());
+    emit(UserLoading()); // event database
     try {
+      // await
       final user = await repository.fetchUserData();
       // success
       emit(UserLoaded(user));
     } catch (e) {
       // error
-      emit(UserError(e.toString()));
+      emit(UserError(e.toString(), User.empty()));
     }
   }
 }
